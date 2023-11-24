@@ -1,0 +1,566 @@
+PS J:\repos\MLDL\Lab3\KDD99PNN\x64\Release> .\call-convert.ps1
+
+Target directory is J:\repos\MLDL\Lab3\data-processing\out-pnn
+
+Binary output: J:\repos\MLDL\Lab3\KDD99PNN\x64\Release\pnn
+Processing file back-1600.csv
+Processing file buffer_overflow-30.csv
+Processing file ftp_write-8.csv
+Processing file guess_passwd-53.csv
+Processing file imap-12.csv
+Processing file ipsweep-1247.csv
+Processing file land-21.csv
+Processing file loadmodule-9.csv
+Processing file multihop-7.csv
+Processing file neptune-960.csv
+Processing file nmap-231.csv
+Processing file normal-960.csv
+Processing file perl-3.csv
+Processing file phf-4.csv
+Processing file pod-264.csv
+Processing file portsweep-1040.csv
+Processing file rootkit-10.csv
+Processing file satan-1589.csv
+Processing file smurf-960.csv
+Processing file spy-2.csv
+Processing file teardrop-979.csv
+Processing file warezclient-1020.csv
+Processing file warezmaster-20.csv
+
+Target directory is J:\repos\MLDL\Lab3\data-processing\out-train
+
+Binary output: J:\repos\MLDL\Lab3\KDD99PNN\x64\Release\train
+Processing file back-1600.csv
+Processing file buffer_overflow-30.csv
+Processing file ftp_write-8.csv
+Processing file guess_passwd-53.csv
+Processing file imap-12.csv
+Processing file ipsweep-1247.csv
+Processing file land-21.csv
+Processing file loadmodule-9.csv
+Processing file multihop-7.csv
+Processing file neptune-1600.csv
+Processing file nmap-231.csv
+Processing file normal-1600.csv
+Processing file perl-3.csv
+Processing file phf-4.csv
+Processing file pod-264.csv
+Processing file portsweep-1040.csv
+Processing file rootkit-10.csv
+Processing file satan-1589.csv
+Processing file smurf-1600.csv
+Processing file spy-2.csv
+Processing file teardrop-979.csv
+Processing file warezclient-1020.csv
+Processing file warezmaster-20.csv
+
+Target directory is J:\repos\MLDL\Lab3\data-processing\out-test
+
+Binary output: J:\repos\MLDL\Lab3\KDD99PNN\x64\Release\test
+Processing file back-400.csv
+Processing file buffer_overflow-30.csv
+Processing file ftp_write-8.csv
+Processing file guess_passwd-53.csv
+Processing file imap-12.csv
+Processing file ipsweep-1247.csv
+Processing file land-21.csv
+Processing file loadmodule-9.csv
+Processing file multihop-7.csv
+Processing file neptune-400.csv
+Processing file nmap-231.csv
+Processing file normal-400.csv
+Processing file perl-3.csv
+Processing file phf-4.csv
+Processing file pod-264.csv
+Processing file portsweep-1040.csv
+Processing file rootkit-10.csv
+Processing file satan-1589.csv
+Processing file smurf-400.csv
+Processing file spy-2.csv
+Processing file teardrop-979.csv
+Processing file warezclient-1020.csv
+Processing file warezmaster-20.csv
+PS J:\repos\MLDL\Lab3\KDD99PNN\x64\Release> .\pnndemo.exe
+Usage: p = pnn, t = train e = test
+[u]sage | [e]xit | [l]oad <p,t,e> inpath:str | [p]rint <p,t,e> outpath:str | [s]igma s:double | [r] input:'a1,a2,a3....,an' | [v]alidate | [t]rain
+Enter command:
+l p pnn
+Enter command:
+l t train
+Enter command:
+l e test
+Enter command:
+t
+Class: back-1600; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-960; eval: 0.99937500000000001332
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-960; eval: 0.95750000000000001776
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-960; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 3.339762
+Enter command:
+v
+Class: back-1600; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-960; eval: 0.99750000000000005329
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-960; eval: 0.89500000000000001776
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-960; eval: 0.99750000000000005329
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 2.272943
+Enter command:
+p p pnn.txt
+Enter command:
+s 0.001
+Enter command:
+t
+Class: back-1600; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.93333333333333334814
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 1.00000000000000000000
+Class: neptune-960; eval: 0.95437499999999997335
+Class: nmap-231; eval: 1.00000000000000000000
+Class: normal-960; eval: 0.78812499999999996447
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-960; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 3.228266
+Enter command:
+v
+Class: back-1600; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.93333333333333334814
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 1.00000000000000000000
+Class: neptune-960; eval: 0.87500000000000000000
+Class: nmap-231; eval: 1.00000000000000000000
+Class: normal-960; eval: 0.48249999999999998446
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-960; eval: 0.99750000000000005329
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 2.282369
+Enter command:
+s 0.1
+Enter command:
+t
+Class: back-1600; eval: 0.99875000000000002665
+Class: buffer_overflow-30; eval: 0.76666666666666671848
+Class: ftp_write-8; eval: 0.87500000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 0.99438652766639934466
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-960; eval: 1.00000000000000000000
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-960; eval: 0.80500000000000004885
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 0.80000000000000004441
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-960; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 2.511801
+Enter command:
+v
+Class: back-1600; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.76666666666666671848
+Class: ftp_write-8; eval: 0.87500000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 0.99438652766639934466
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-960; eval: 1.00000000000000000000
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-960; eval: 0.76249999999999995559
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 0.80000000000000004441
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-960; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 1.843853
+Enter command:
+p p pnn-2000.txt
+Enter command:
+p t train-2000.txt
+Enter command:
+p e test-2000.txt
+Enter command:
+l p pnn
+Enter command:
+l t train
+Enter command:
+l e test
+Enter command:
+p p pnn.txt
+Enter command:
+t
+Class: back-2203; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-1920; eval: 0.99937500000000001332
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-1920; eval: 0.97343749999999995559
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-1920; eval: 0.99906249999999996447
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 5.819486
+Enter command:
+v
+Class: back-2203; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-1920; eval: 0.99624999999999996891
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-1920; eval: 0.92500000000000004441
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-1920; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 3.805071
+Enter command:
+s 0.015
+Enter command:
+t
+Class: back-2203; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 0.87500000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-1920; eval: 0.99937500000000001332
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-1920; eval: 0.98187500000000005329
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 0.90000000000000002220
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-1920; eval: 0.99906249999999996447
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 5.785402
+Enter command:
+v
+Class: back-2203; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 0.87500000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-1920; eval: 0.99875000000000002665
+Class: nmap-231; eval: 0.98701298701298700866
+Class: normal-1920; eval: 0.94625000000000003553
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99903846153846154188
+Class: rootkit-10; eval: 0.90000000000000002220
+Class: satan-1589; eval: 1.00000000000000000000
+Class: smurf-1920; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 3.864981
+Enter command:
+p p pnn-4000.txt
+Enter command:
+p t train-4000.txt
+Enter command:
+p e test-4000.txt
+Enter command:
+s 0.6
+Enter command:
+t
+Class: back-2203; eval: 0.99818429414434861613
+Class: buffer_overflow-30; eval: 0.36666666666666664076
+Class: ftp_write-8; eval: 0.00000000000000000000
+Class: guess_passwd-53; eval: 0.98113207547169811740
+Class: imap-12; eval: 0.83333333333333337034
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 0.22222222222222220989
+Class: multihop-7; eval: 0.00000000000000000000
+Class: neptune-1920; eval: 1.00000000000000000000
+Class: nmap-231; eval: 0.48051948051948051299
+Class: normal-1920; eval: 0.59406250000000004885
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 0.00000000000000000000
+Class: pod-264; eval: 0.41287878787878790066
+Class: portsweep-1040; eval: 0.95769230769230773159
+Class: rootkit-10; eval: 0.20000000000000001110
+Class: satan-1589; eval: 0.98237885462555063487
+Class: smurf-1920; eval: 1.00000000000000000000
+Class: spy-2; eval: 0.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 0.95196078431372543882
+Class: warezmaster-20; eval: 0.75000000000000000000
+zero count: 4
+time: 3.355672
+Enter command:
+v
+Class: back-2203; eval: 0.99818429414434861613
+Class: buffer_overflow-30; eval: 0.36666666666666664076
+Class: ftp_write-8; eval: 0.00000000000000000000
+Class: guess_passwd-53; eval: 0.98113207547169811740
+Class: imap-12; eval: 0.83333333333333337034
+Class: ipsweep-1247; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 0.22222222222222220989
+Class: multihop-7; eval: 0.00000000000000000000
+Class: neptune-1920; eval: 1.00000000000000000000
+Class: nmap-231; eval: 0.48051948051948051299
+Class: normal-1920; eval: 0.58374999999999999112
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 0.00000000000000000000
+Class: pod-264; eval: 0.41287878787878790066
+Class: portsweep-1040; eval: 0.95769230769230773159
+Class: rootkit-10; eval: 0.20000000000000001110
+Class: satan-1589; eval: 0.98237885462555063487
+Class: smurf-1920; eval: 1.00000000000000000000
+Class: spy-2; eval: 0.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 0.95196078431372543882
+Class: warezmaster-20; eval: 0.75000000000000000000
+zero count: 4
+time: 2.302804
+Enter command:
+l p pnn
+Enter command:
+l t train
+Enter command:
+l e test
+Enter command:
+p p pnn.txt
+Enter command:
+t
+Class: back-81; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-81; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-90; eval: 1.00000000000000000000
+Class: nmap-81; eval: 0.98888888888888892836
+Class: normal-90; eval: 1.00000000000000000000
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-81; eval: 0.98888888888888892836
+Class: portsweep-81; eval: 0.96666666666666667407
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-81; eval: 1.00000000000000000000
+Class: smurf-90; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-81; eval: 1.00000000000000000000
+Class: warezclient-81; eval: 0.97777777777777774570
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 0.143502
+Enter command:
+v
+Class: back-81; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 1.00000000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-81; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-90; eval: 1.00000000000000000000
+Class: nmap-81; eval: 1.00000000000000000000
+Class: normal-90; eval: 1.00000000000000000000
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-81; eval: 0.69999999999999995559
+Class: portsweep-81; eval: 0.80000000000000004441
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-81; eval: 1.00000000000000000000
+Class: smurf-90; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-81; eval: 1.00000000000000000000
+Class: warezclient-81; eval: 0.90000000000000002220
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 0.035927
+Enter command:
+s 0.015
+Enter command:
+t
+Class: back-81; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 0.87500000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-81; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-90; eval: 1.00000000000000000000
+Class: nmap-81; eval: 0.98888888888888892836
+Class: normal-90; eval: 1.00000000000000000000
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-81; eval: 1.00000000000000000000
+Class: portsweep-81; eval: 1.00000000000000000000
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-81; eval: 1.00000000000000000000
+Class: smurf-90; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-81; eval: 1.00000000000000000000
+Class: warezclient-81; eval: 0.97777777777777774570
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 0.141312
+Enter command:
+v
+Class: back-81; eval: 1.00000000000000000000
+Class: buffer_overflow-30; eval: 0.90000000000000002220
+Class: ftp_write-8; eval: 0.87500000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-81; eval: 1.00000000000000000000
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.85714285714285709528
+Class: neptune-90; eval: 1.00000000000000000000
+Class: nmap-81; eval: 1.00000000000000000000
+Class: normal-90; eval: 1.00000000000000000000
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-81; eval: 0.90000000000000002220
+Class: portsweep-81; eval: 0.80000000000000004441
+Class: rootkit-10; eval: 1.00000000000000000000
+Class: satan-81; eval: 1.00000000000000000000
+Class: smurf-90; eval: 1.00000000000000000000
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-81; eval: 1.00000000000000000000
+Class: warezclient-81; eval: 1.00000000000000000000
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 0.034295
+Enter command:
+e
+PS J:\repos\MLDL\Lab3\KDD99PNN\x64\Release>

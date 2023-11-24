@@ -1,6 +1,8 @@
-#include "kdd99pnn.h"
+#include "pch.h"
 
-#include "kdd99pnn_alloc_check.h"
+#include "pnn.h"
+
+#include "pnn_alloc_check.h"
 
 #include <stdlib.h>
 
@@ -46,10 +48,10 @@ pnn_class * pnn_class_free(pnn_class * obj)
 	return NULL;
 }
 
-pnn_net * pnn_net_create(double sigma, int property_count, int total_reference_count, int class_count,
+pnn_data * pnn_data_create(double sigma, int property_count, int total_reference_count, int class_count,
 						 pnn_class ** pnn_class_arr)
 {
-	pnn_net * obj = (pnn_net *)malloc(sizeof(pnn_net));
+	pnn_data * obj = (pnn_data *)malloc(sizeof(pnn_data));
 	pnn_fail_alloc_check(obj);
 
 	obj->sigma = sigma;
@@ -61,7 +63,7 @@ pnn_net * pnn_net_create(double sigma, int property_count, int total_reference_c
 	return obj;
 }
 
-pnn_net * pnn_net_free(pnn_net * obj)
+pnn_data * pnn_data_free(pnn_data * obj)
 {
 	for (int i = 0; i < obj->class_count; i++)
 		pnn_class_free(obj->pnn_class_arr[i]);

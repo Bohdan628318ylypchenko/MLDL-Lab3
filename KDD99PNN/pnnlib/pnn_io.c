@@ -1,13 +1,13 @@
-#include "kdd99pnn.h"
+#include "pch.h"
 
-#include "kdd99pnn_alloc_check.h"
+#include "pnn.h"
+
+#include "pnn_alloc_check.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 
-#define DEFAULT_SIGMA 0.01
-
-pnn_net * pnn_net_load(FILE * f)
+pnn_data * pnn_data_load(FILE * f)
 {
 	int property_count;
 	int total_reference_count;
@@ -65,16 +65,16 @@ pnn_net * pnn_net_load(FILE * f)
 		pnn_class_arr[state_class.i] = pnn_class_create(state_class.class_name, state_class.reference_count, pnn_reference_arr);
 	}
 
-	pnn_net * net = pnn_net_create(DEFAULT_SIGMA, property_count, total_reference_count, class_count,
-								   pnn_class_arr);
+	pnn_data * data = pnn_data_create(DEFAULT_SIGMA, property_count, total_reference_count, class_count,
+								      pnn_class_arr);
 
-	return net;
+	return data;
 }
 
-void * pnn_net_fprint(pnn_net * net, FILE * f)
+void pnn_data_fprint(pnn_data * data, FILE * f)
 {
 	fprintf(f, "sigma = %lf; property_count = %d; total_reference_count = %d; class_count = %d\n",
-			net->sigma, net->property_count, net->total_reference_count, net->class_count);
+			data->sigma, data->property_count, data->total_reference_count, data->class_count);
 
 	for (struct
 	     {
@@ -82,9 +82,9 @@ void * pnn_net_fprint(pnn_net * net, FILE * f)
 			 pnn_class * current_class;
 	     }
 	     state_class = { .i = 0, .current_class = NULL };
-	     state_class.i < net->class_count; state_class.i++)
+	     state_class.i < data->class_count; state_class.i++)
 	{
-		state_class.current_class = net->pnn_class_arr[state_class.i];
+		state_class.current_class = data->pnn_class_arr[state_class.i];
 
 		fprintf(f, "    class_name = %s; reference_count = %d\n",
 				state_class.current_class->class_name, state_class.current_class->reference_count);
@@ -99,14 +99,14 @@ void * pnn_net_fprint(pnn_net * net, FILE * f)
 		{
 			state_reference.current_reference = state_class.current_class->reference_arr[state_reference.j];
 
-			fprintf(f, "        id = %d; property_count = %d;",
+			fprintf(f, "        id = %d; property_count = %d; ",
 					state_reference.current_reference->id, state_reference.current_reference->property_count);
 
-			for (int k = 0; k < state_reference.current_reference->property_count; k++)
+			for (int k = 0; k < state_reference.current_reference->property_count - 1; k++)
 			{
-				fprintf(f, " %.2lf", state_reference.current_reference->reference[k]);
+				fprintf(f, "%.2lf,", state_reference.current_reference->reference[k]);
 			}
-			fputc('\n', f);
+			fprintf(f, "%.2lf\n", state_reference.current_reference->reference[state_reference.current_reference->property_count - 1]);
 		}
 	}
 }
