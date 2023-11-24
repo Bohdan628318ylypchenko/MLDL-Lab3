@@ -1,0 +1,132 @@
+PS X:\KDD\Release> .\call-convert.ps1
+
+Target directory is X:\KDD\data-processing\out-pnn
+
+Binary output: X:\KDD\Release\pnn
+Processing file back-2203.csv
+Processing file buffer_overflow-30.csv
+Processing file ftp_write-8.csv
+Processing file guess_passwd-53.csv
+Processing file imap-12.csv
+Processing file ipsweep-12481.csv
+Processing file land-21.csv
+Processing file loadmodule-9.csv
+Processing file multihop-7.csv
+Processing file neptune-1072017.csv
+Processing file nmap-2316.csv
+Processing file normal-972781.csv
+Processing file perl-3.csv
+Processing file phf-4.csv
+Processing file pod-264.csv
+Processing file portsweep-10413.csv
+Processing file rootkit-10.csv
+Processing file satan-15892.csv
+Processing file smurf-2807886.csv
+Processing file spy-2.csv
+Processing file teardrop-979.csv
+Processing file warezclient-1020.csv
+Processing file warezmaster-20.csv
+
+Target directory is X:\KDD\data-processing\out-train
+
+Binary output: X:\KDD\Release\train
+Processing file back-2203.csv
+Processing file buffer_overflow-30.csv
+Processing file ftp_write-8.csv
+Processing file guess_passwd-53.csv
+Processing file imap-12.csv
+Processing file ipsweep-12481.csv
+Processing file land-21.csv
+Processing file loadmodule-9.csv
+Processing file multihop-7.csv
+Processing file neptune-1072017.csv
+Processing file nmap-2316.csv
+Processing file normal-972781.csv
+Processing file perl-3.csv
+Processing file phf-4.csv
+Processing file pod-264.csv
+Processing file portsweep-10413.csv
+Processing file rootkit-10.csv
+Processing file satan-15892.csv
+Processing file smurf-2807886.csv
+Processing file spy-2.csv
+Processing file teardrop-979.csv
+Processing file warezclient-1020.csv
+Processing file warezmaster-20.csv
+
+Target directory is X:\KDD\data-processing\out-test
+
+Binary output: X:\KDD\Release\test
+Processing file back-2203.csv
+Processing file buffer_overflow-30.csv
+Processing file ftp_write-8.csv
+Processing file guess_passwd-53.csv
+Processing file imap-12.csv
+Processing file ipsweep-12481.csv
+Processing file land-21.csv
+Processing file loadmodule-9.csv
+Processing file multihop-7.csv
+Processing file neptune-1072017.csv
+Processing file nmap-2316.csv
+Processing file normal-972781.csv
+Processing file perl-3.csv
+Processing file phf-4.csv
+Processing file pod-264.csv
+Processing file portsweep-10413.csv
+Processing file rootkit-10.csv
+Processing file satan-15892.csv
+Processing file smurf-2807886.csv
+Processing file spy-2.csv
+Processing file teardrop-979.csv
+Processing file warezclient-1020.csv
+Processing file warezmaster-20.csv
+PS X:\KDD\Release> .\pnndemo.exe
+Usage: p = pnn, t = train e = test
+[u]sage | [e]xit | [l]oad <p,t,e> inpath:str | [p]rint <p,t,e> outpath:str | [s]igma s:double | [r] input:'a1,a2,a3....,an' | [v]alidate | [t]rain
+Enter command:
+l p pnn-8000
+Enter command:
+l e test
+Enter command:
+e
+PS X:\KDD\Release> .\pnndemo.exe
+Usage: p = pnn, t = train e = test
+[u]sage | [e]xit | [l]oad <p,t,e> inpath:str | [p]rint <p,t,e> outpath:str | [s]igma s:double | [r] input:'a1,a2,a3....,an' | [v]alidate | [t]rain
+Enter command:
+l p pnn-8000
+Enter command:
+s 0.035
+Enter command:
+l e test
+Enter command:
+v
+Class: back-2203; eval: 0.99773036768043577016
+Class: buffer_overflow-30; eval: 0.86666666666666669627
+Class: ftp_write-8; eval: 0.87500000000000000000
+Class: guess_passwd-53; eval: 1.00000000000000000000
+Class: imap-12; eval: 1.00000000000000000000
+Class: ipsweep-1247; eval: 0.99679512859546515191
+Class: land-21; eval: 1.00000000000000000000
+Class: loadmodule-9; eval: 1.00000000000000000000
+Class: multihop-7; eval: 0.71428571428571430157
+Class: neptune-3600; eval: 0.99978171987944219889
+Class: nmap-231; eval: 0.96243523316062173922
+Class: normal-3600; eval: 0.98279880055223123314
+Class: perl-3; eval: 1.00000000000000000000
+Class: phf-4; eval: 1.00000000000000000000
+Class: pod-264; eval: 1.00000000000000000000
+Class: portsweep-1040; eval: 0.99654278305963694962
+Class: rootkit-10; eval: 0.90000000000000002220
+Class: satan-1589; eval: 0.99496602063931538495
+Class: smurf-3600; eval: 0.99951743055095543244
+Class: spy-2; eval: 1.00000000000000000000
+Class: teardrop-979; eval: 1.00000000000000000000
+Class: warezclient-1020; eval: 0.85882352941176465233
+Class: warezmaster-20; eval: 1.00000000000000000000
+zero count: 0
+time: 2349.750440
+Enter command:
+p e test-18m.txt
+Enter command:
+e
+PS X:\KDD\Release>
